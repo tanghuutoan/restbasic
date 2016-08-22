@@ -6,7 +6,8 @@ var books = {
 
     getOne: function(req, res) {
         var id = req.params.id;
-        var book = data[0]; 
+        var book = data[id];
+	console.log("you are getting book id", id); 
         res.json(book);
     },
 
